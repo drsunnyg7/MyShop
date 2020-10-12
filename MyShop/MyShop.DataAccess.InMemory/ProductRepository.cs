@@ -55,10 +55,10 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
-        //public Product IQueryable<Product>Collections()
-        //{
-        //    return products.AsQueryable<Product>();
-        //}
+        public IQueryable<Product>Collection()
+        {
+            return products.AsQueryable<Product>();
+        }
 
         public void Delete(string id)
         {
